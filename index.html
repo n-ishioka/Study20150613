@@ -6,6 +6,11 @@
 <SCRIPT type="text/Javascript">
 for( var i = 1 ; i <= 30 ; i++ )
 {
+        var srcSeven = String(i).indexOf("7") ;
+        if( srcSeven >= 0 )
+        {
+	    document.write("github");
+        }
 	if(i % 3 == 0 && i % 5 == 0)
 	{
 	    document.write("fizzbuzz");
@@ -20,7 +25,7 @@ for( var i = 1 ; i <= 30 ; i++ )
 	}
 	else
 	{
-	    document.write(i);
+	    if(srcSeven < 0) document.write(i);
 	}
 	document.write("</br>");
 }
